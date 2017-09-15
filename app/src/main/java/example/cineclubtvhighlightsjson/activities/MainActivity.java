@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.List;
 
@@ -60,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
         // specify an adapter (see also next example)
         mAdapter = new RecycleViewAdapter(tvHighlights);
         mRecyclerView.setAdapter(mAdapter);
+
+        if (mAdapter.getItemCount() > 0){
+            MainActivity.this.findViewById(R.id.img_no_entries).setVisibility(View.GONE);
+            MainActivity.this.findViewById(R.id.txt_no_entries).setVisibility(View.GONE);
+        }
 
     }
 

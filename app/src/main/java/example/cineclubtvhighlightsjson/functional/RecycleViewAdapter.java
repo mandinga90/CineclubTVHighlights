@@ -14,6 +14,7 @@ import java.util.List;
 
 import example.cineclubtvhighlightsjson.R;
 import example.cineclubtvhighlightsjson.activities.DetailsActivity;
+import example.cineclubtvhighlightsjson.activities.MainActivity;
 import example.cineclubtvhighlightsjson.entities.TvHighlight;
 
 /**
@@ -24,11 +25,27 @@ import example.cineclubtvhighlightsjson.entities.TvHighlight;
  */
 
 public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.ViewHolder>{
-    private List<TvHighlight> tvHighlights = new LinkedList<>();
-
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
     // you provide access to all the views for a data item in a view holder
+
+    // Provide a suitable constructor (depends on the kind of dataset)
+    public RecycleViewAdapter(List<TvHighlight> tvHighlights) {
+        for(int i = 0; i < tvHighlights.size(); i++){
+            TvHighlight currentTvHighlight = tvHighlights.get(i);
+            if(DateTimeHelper.isToday(currentTvHighlight.getDateTime())){
+                this.tvHighlights.add(currentTvHighlight);
+            }
+        }
+    }
+
+    // Return the size of your dataset (invoked by the layout manager)
+    @Override
+    public int getItemCount() {
+        return tvHighlights.size();
+    }
+
+    private List<TvHighlight> tvHighlights = new LinkedList<>();
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView title;
         public TextView originalTitle;
@@ -36,7 +53,9 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         public ImageView tvChannelIcon;
         public TextView advertisingInMinutes;
         public ImageView cover;
+
         public TextView tvChannelName;
+
         private TvHighlight tvHighlight;
 
         public ViewHolder(View v) {
@@ -54,7 +73,6 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
             cover = (ImageView) v.findViewById(R.id.tv_highlight_cover);
             tvChannelName = (TextView) v.findViewById(R.id.tv_highlight_channel_name);
         }
-
         @Override
         public void onClick(View v) {
 
@@ -67,16 +85,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         public void setTvHighlight(TvHighlight tvHighlight) {
             this.tvHighlight = tvHighlight;
         }
-    }
 
-    // Provide a suitable constructor (depends on the kind of dataset)
-    public RecycleViewAdapter(List<TvHighlight> tvHighlights) {
-        for(int i = 0; i < tvHighlights.size(); i++){
-            TvHighlight currentTvHighlight = tvHighlights.get(i);
-            if(DateTimeHelper.isToday(currentTvHighlight.getDateTime())){
-                this.tvHighlights.add(currentTvHighlight);
-            }
-        }
     }
 
     // Create new views (invoked by the layout manager)
@@ -131,11 +140,5 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         // cover
         currentTvHighlight.setCoverImage(holder.cover);
 
-    }
-
-    // Return the size of your dataset (invoked by the layout manager)
-    @Override
-    public int getItemCount() {
-        return tvHighlights.size();
     }
 }
