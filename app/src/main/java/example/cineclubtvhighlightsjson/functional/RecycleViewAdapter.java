@@ -36,6 +36,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         public ImageView tvChannelIcon;
         public TextView advertisingInMinutes;
         public ImageView cover;
+        public TextView tvChannelName;
         private TvHighlight tvHighlight;
 
         public ViewHolder(View v) {
@@ -51,6 +52,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
             tvChannelIcon = (ImageView) v.findViewById(R.id.tv_highlight_channel_icon);
             advertisingInMinutes = (TextView) v.findViewById(R.id.tv_highlight_advertising_in_minutes);
             cover = (ImageView) v.findViewById(R.id.tv_highlight_cover);
+            tvChannelName = (TextView) v.findViewById(R.id.tv_highlight_channel_name);
         }
 
         @Override
@@ -113,10 +115,14 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         holder.time.setText( currentTvHighlight.getDateTimeString() );
 
         // tv channel icon
-        holder.tvChannelIcon.setContentDescription(currentTvHighlight.getTvChannel());
+        holder.tvChannelIcon.setContentDescription(currentTvHighlight.getTvChannelName());
         int tvChannelIcon = currentTvHighlight.getTvChannelIcon();
         if( tvChannelIcon > 0 ){
             holder.tvChannelIcon.setImageResource(tvChannelIcon);
+            holder.tvChannelName.setVisibility(View.GONE);
+        }
+        else{
+            holder.tvChannelName.setText(currentTvHighlight.getTvChannelName());
         }
 
         // advertising in minutes

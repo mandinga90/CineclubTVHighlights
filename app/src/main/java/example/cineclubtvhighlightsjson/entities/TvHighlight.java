@@ -200,7 +200,7 @@ public class TvHighlight implements Parcelable {
         return Html.fromHtml( link );
     }
 
-    public String getTvChannel() {
+    public String getTvChannelName() {
         return tvChannel;
     }
 
