@@ -124,7 +124,6 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         holder.time.setText( currentTvHighlight.getDateTimeString() );
 
         // tv channel icon
-        holder.tvChannelIcon.setContentDescription(currentTvHighlight.getTvChannelName());
         int tvChannelIcon = currentTvHighlight.getTvChannelIcon();
         if( tvChannelIcon > 0 ){
             holder.tvChannelIcon.setImageResource(tvChannelIcon);

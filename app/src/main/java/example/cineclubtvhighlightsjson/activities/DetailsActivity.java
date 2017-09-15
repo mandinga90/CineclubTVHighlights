@@ -21,8 +21,18 @@ public class DetailsActivity extends AppCompatActivity {
         TvHighlight tvHighlightForDetails = getIntent().getParcelableExtra(getResources().getString(R.string.parcelableExtra));
         TvHighlightDetailsBinding binding = DataBindingUtil.setContentView(this, R.layout.tv_highlight_details);
         binding.setTvHighlight(tvHighlightForDetails);
+
+        // cover image
         tvHighlightForDetails.setCoverImage(binding.tvHighlightDetailsCover);
-        binding.tvHighlightDetailsChannelIcon.setImageResource(tvHighlightForDetails.getTvChannelIcon());
+
+        // tv channel
+        if (tvHighlightForDetails.getTvChannelIcon() > 0){
+            binding.tvHighlightDetailsChannelIcon.setImageResource(tvHighlightForDetails.getTvChannelIcon());
+            binding.tvHighlightDetailsChannelName.setVisibility(View.GONE);
+        }
+        else{
+            binding.tvHighlightDetailsChannelName.setText(tvHighlightForDetails.getTvChannelName());
+        }
 
         // original title
         String originalTitleToBeDisplayed = tvHighlightForDetails.getOriginalTitleToBeDisplayed();

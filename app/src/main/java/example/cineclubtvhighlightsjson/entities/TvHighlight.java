@@ -58,9 +58,10 @@ public class TvHighlight implements Parcelable {
         tvChannelIcons.put("RTL", R.drawable.ic_channel_rtl );
         tvChannelIcons.put("RTL 2", R.drawable.ic_channel_rtl2 );
         tvChannelIcons.put("RTL II", R.drawable.ic_channel_rtl2 );
-        tvChannelIcons.put("RTL Nitro", R.drawable.ic_channel_rtl_nitro );
         tvChannelIcons.put("RTL2", R.drawable.ic_channel_rtl2 );
+        tvChannelIcons.put("RTL Nitro", R.drawable.ic_channel_rtl_nitro );
         tvChannelIcons.put("RTLNitro", R.drawable.ic_channel_rtl_nitro );
+        tvChannelIcons.put("Nitro", R.drawable.ic_channel_rtl_nitro );
         tvChannelIcons.put("Sat,1", R.drawable.ic_channel_sat1 );
         tvChannelIcons.put("Sat.1", R.drawable.ic_channel_sat1 );
         tvChannelIcons.put("Sat.1 Gold", R.drawable.ic_channel_sat1_gold );

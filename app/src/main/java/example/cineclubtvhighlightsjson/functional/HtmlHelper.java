@@ -14,6 +14,7 @@ public class HtmlHelper {
         HTML_CHARACTERS.put( "&Ouml;", "Ö" );
         HTML_CHARACTERS.put( "&Uuml;", "Ü" );
         HTML_CHARACTERS.put( "&szlig;", "ß" );
+        HTML_CHARACTERS.put( "&apos;", "’" );
     }
 
     public static String replaceHtmlCharacters( String s ){
