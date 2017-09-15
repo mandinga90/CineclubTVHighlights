@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cineclub TV Highlights</string>
+    <string name="NETWORK_FRAGMENT_TAG">NETWORK_FRAGMENT</string>
+    <string name="ic_cover_description">cover</string>
+    <string name="ic_channel_description">TV channel</string>
+    <string name="parcelableExtra">tvHighlight</string>
+</resources>
