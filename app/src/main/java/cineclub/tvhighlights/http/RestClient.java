@@ -1,4 +1,4 @@
-package example.cineclubtvhighlightsjson.http;
+package cineclub.tvhighlights.http;
 
 import java.io.IOException;
 

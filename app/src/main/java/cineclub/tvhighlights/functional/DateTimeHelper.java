@@ -1,4 +1,4 @@
-package example.cineclubtvhighlightsjson.functional;
+package cineclub.tvhighlights.functional;
 
 import android.util.Log;
 
@@ -24,7 +24,7 @@ public class DateTimeHelper {
 //        fmt.setTimeZone(TimeZone.getTimeZone("GMT+2"));
         if (dateString.contains("T")) dateString = dateString.replace('T', ' ');
         if (dateString.contains("Z")) dateString = dateString.replace(".000", "");
-        if (dateString.contains("Z")) dateString = dateString.replace("Z", "+0200");
+        if (dateString.contains("Z")) dateString = dateString.replace("Z", "+0100");
         else
             dateString = dateString.substring(0, dateString.lastIndexOf(':')) + dateString.substring(dateString.lastIndexOf(':')+1);
         try {
@@ -36,7 +36,7 @@ public class DateTimeHelper {
         }
     }
     public static boolean isToday(Calendar date){
-        Calendar today = GregorianCalendar.getInstance(TimeZone.getTimeZone("GMT+2"));
+        Calendar today = GregorianCalendar.getInstance(TimeZone.getTimeZone("GMT+1"));
         return (    date.get( Calendar.YEAR ) == today.get( Calendar.YEAR )
                  && date.get( Calendar.MONTH ) == today.get( Calendar.MONTH )
                  && date.get( Calendar.DAY_OF_MONTH ) == today.get( Calendar.DAY_OF_MONTH ) );

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="example.cineclubtvhighlightsjson.activities.MainActivity">
+    tools:context="cineclub.tvhighlights.activities.MainActivity">
 
     app:layout_constraintTop_toTopOf="parent"
     <ImageView

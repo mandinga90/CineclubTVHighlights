@@ -1,4 +1,4 @@
-package example.cineclubtvhighlightsjson.activities;
+package cineclub.tvhighlights.activities;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -8,9 +8,9 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.MenuItem;
 import android.view.View;
 
-import example.cineclubtvhighlightsjson.R;
-import example.cineclubtvhighlightsjson.databinding.TvHighlightDetailsBinding;
-import example.cineclubtvhighlightsjson.entities.TvHighlight;
+import cineclub.tvhighlights.R;
+import cineclub.tvhighlights.databinding.TvHighlightDetailsBinding;
+import cineclub.tvhighlights.entities.TvHighlight;
 
 public class DetailsActivity extends AppCompatActivity {
 

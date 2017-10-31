@@ -41,12 +41,10 @@
 
         <TextView
             android:id="@+id/tv_highlight_title"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="0dp"
-            android:layout_marginTop="0dp"
-            android:maxWidth="212dp"
+            android:maxWidth="180dp"
             android:text="N/A"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="18sp"
@@ -57,20 +55,17 @@
 
         <TextView
             android:id="@+id/tv_highlight_original_title"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="0dp"
-            android:layout_marginTop="8dp"
-            android:maxWidth="212dp"
+            android:layout_marginTop="4dp"
+            android:maxWidth="180dp"
             android:text="N/A"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toRightOf="@+id/tv_highlight_cover"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_highlight_title"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_highlight_title" />
 
     </android.support.constraint.ConstraintLayout>
 

@@ -1,4 +1,4 @@
-package example.cineclubtvhighlightsjson.functional;
+package cineclub.tvhighlights.functional;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

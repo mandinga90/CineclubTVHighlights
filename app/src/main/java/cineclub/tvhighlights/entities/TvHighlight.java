@@ -1,4 +1,4 @@
-package example.cineclubtvhighlightsjson.entities;
+package cineclub.tvhighlights.entities;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -13,11 +13,11 @@ import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Map;
 
-import example.cineclubtvhighlightsjson.R;
-import example.cineclubtvhighlightsjson.functional.DateTimeHelper;
-import example.cineclubtvhighlightsjson.functional.DownloadImageTask;
+import cineclub.tvhighlights.R;
+import cineclub.tvhighlights.functional.DateTimeHelper;
+import cineclub.tvhighlights.functional.DownloadImageTask;
 
-import static example.cineclubtvhighlightsjson.functional.HtmlHelper.replaceHtmlCharacters;
+import static cineclub.tvhighlights.functional.HtmlHelper.replaceHtmlCharacters;
 
 /**
  * Created by mlu on 05.05.2017.

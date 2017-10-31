@@ -1,4 +1,4 @@
-package example.cineclubtvhighlightsjson.functional;
+package cineclub.tvhighlights.functional;
 
 import java.util.HashMap;
 import java.util.Map;

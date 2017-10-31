@@ -1,4 +1,4 @@
-package example.cineclubtvhighlightsjson.activities;
+package cineclub.tvhighlights.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,11 +8,11 @@ import android.view.View;
 
 import java.util.List;
 
-import example.cineclubtvhighlightsjson.R;
-import example.cineclubtvhighlightsjson.entities.TvHighlight;
-import example.cineclubtvhighlightsjson.functional.Consumer;
-import example.cineclubtvhighlightsjson.functional.RecycleViewAdapter;
-import example.cineclubtvhighlightsjson.ui.fragments.RetainFragment;
+import cineclub.tvhighlights.R;
+import cineclub.tvhighlights.entities.TvHighlight;
+import cineclub.tvhighlights.functional.Consumer;
+import cineclub.tvhighlights.functional.RecycleViewAdapter;
+import cineclub.tvhighlights.ui.fragments.RetainFragment;
 
 public class MainActivity extends AppCompatActivity {
 

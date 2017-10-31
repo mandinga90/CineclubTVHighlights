@@ -1,4 +1,4 @@
-package example.cineclubtvhighlightsjson.ui.fragments;
+package cineclub.tvhighlights.ui.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,10 +8,10 @@ import android.widget.Toast;
 
 import java.util.List;
 
-import example.cineclubtvhighlightsjson.entities.TvHighlight;
-import example.cineclubtvhighlightsjson.functional.Consumer;
-import example.cineclubtvhighlightsjson.http.RestClient;
-import example.cineclubtvhighlightsjson.http.TVHighlightService;
+import cineclub.tvhighlights.entities.TvHighlight;
+import cineclub.tvhighlights.functional.Consumer;
+import cineclub.tvhighlights.http.RestClient;
+import cineclub.tvhighlights.http.TVHighlightService;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

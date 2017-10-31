@@ -1,4 +1,4 @@
-package example.cineclubtvhighlightsjson.functional;
+package cineclub.tvhighlights.functional;
 
 import android.content.Intent;
 import android.support.v4.content.ContextCompat;
@@ -12,10 +12,9 @@ import android.widget.TextView;
 import java.util.LinkedList;
 import java.util.List;
 
-import example.cineclubtvhighlightsjson.R;
-import example.cineclubtvhighlightsjson.activities.DetailsActivity;
-import example.cineclubtvhighlightsjson.activities.MainActivity;
-import example.cineclubtvhighlightsjson.entities.TvHighlight;
+import cineclub.tvhighlights.R;
+import cineclub.tvhighlights.activities.DetailsActivity;
+import cineclub.tvhighlights.entities.TvHighlight;
 
 /**
  * Created by mlu on 06.05.2017.

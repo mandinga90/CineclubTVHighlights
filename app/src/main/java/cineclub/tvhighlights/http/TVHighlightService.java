@@ -1,8 +1,8 @@
-package example.cineclubtvhighlightsjson.http;
+package cineclub.tvhighlights.http;
 
 import java.util.List;
 
-import example.cineclubtvhighlightsjson.entities.TvHighlight;
+import cineclub.tvhighlights.entities.TvHighlight;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;

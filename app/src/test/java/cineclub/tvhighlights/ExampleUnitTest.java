@@ -1,4 +1,4 @@
-package example.cineclubtvhighlightsjson;
+package cineclub.tvhighlights;
 
 import org.junit.Test;
 
